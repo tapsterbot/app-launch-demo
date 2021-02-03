@@ -4,6 +4,8 @@ App launch demo for the Tapster 3 robot
 ## Setup
 
 ```
+git clone https://github.com/tapsterbot/app-launch-demo.git
+cd app-launch-demo
 python3 -m venv env
 source env/bin/activate
 pip install -r requirements.txt
