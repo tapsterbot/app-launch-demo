@@ -10,9 +10,9 @@
 import time
 import datetime
 import argparse
-import robot
-import vision
 import importlib
+from robot import Robot
+from vision import Vision
 
 def parse_arguments():
     parser = argparse.ArgumentParser(description='Tapster Robot - App Launch Test')
@@ -54,8 +54,8 @@ if __name__ == '__main__':
     args = parse_arguments()
 
     #Initialize
-    robot = robot.Robot(args.port)
-    camera = vision.Vision(args.camera)
+    robot = Robot(args.port)
+    camera = Vision(args.camera)
     # Dynamically import the phone module based on the --name command line flag
     phone_module = importlib.import_module(args.name)
     phone = phone_module.Phone(robot)
