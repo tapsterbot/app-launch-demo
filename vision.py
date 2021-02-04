@@ -30,7 +30,7 @@ class Vision:
     def clear_image_buffer(self):
         # Need to pull a few frames to clear out the image buffer in the camera hardware
         # It's a bit of a hack, but it works. ¯\_(ツ)_/¯
-        for i in range(10):
+        for i in range(20):
             ret, self.frame = self.cap.read()
 
 
