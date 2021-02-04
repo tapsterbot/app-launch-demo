@@ -3,6 +3,11 @@ App launch demo for the Tapster 3 robot
 
 ## Setup
 
+Linux is required because of a dependency on Video4Linux and v4l2-ctl to disable automatic exposure in the connected USB camera.
+With a Windows or MacOS equivalent of `v4l2-ctl`, the rest of the code would/could/should work.
+
+(Tested on Ubuntu 18.04)
+
 ```
 git clone https://github.com/tapsterbot/app-launch-demo.git
 cd app-launch-demo
